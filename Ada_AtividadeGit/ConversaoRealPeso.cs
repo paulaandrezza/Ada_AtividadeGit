@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Ada_AtividadeGit
 {
-    internal class ConversaoRealIene
+    public class ConversaoRealPeso
     {
-        private double taxaCambioRealParaIene = 20.5;
-        public void Converter()
+        private double taxaConversaoParaARS = 162.04;
+        public void ConversaoPesoArgentino()
         {
             double valorEmReal;
-            Console.Write("Insira o valor em real que deseja converter para Iene: R$ ");
+            Console.Write("Insira o valor em real que deseja converter para Peso Argentino: R$ ");
 
             if (double.TryParse(Console.ReadLine(), out valorEmReal))
             {
-                double valorEmIene = valorEmReal * taxaCambioRealParaIene;
-                Console.WriteLine($"Valor em Iene: ¥ {valorEmIene}");
+                double valorEmARS = valorEmReal * taxaConversaoParaARS;
+                Console.WriteLine($"Valor em Peso Argentino: $ {valorEmARS}");
             }
             else
             {
