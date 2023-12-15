@@ -19,25 +19,41 @@ namespace Ada_AtividadeGit
             var realParaIene = new ConversaoRealIene();
             var realParaEuro = new ConversaoRealEuro();
             var realParaPesoArgentino = new ConversaoRealPeso();
-            var realParaDolar = new ConversaoRealDolar();
+            var realParaDolarCanadense = new ConversaoRealDolar();
+            var realParaRupia = new ConversaoRealRupia();
             double valorReal;
             Console.WriteLine("Informe o valor que deseja converter: ");
-            valorReal = double.Parse(Console.ReadLine());
+            try
+            {
+                valorReal = double.Parse(Console.ReadLine());
+                if (valorReal < 0)
+                {
+                    Console.WriteLine("Valor precisa ser positivo");
+                    return;
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Valor invalido");
+                return;
+            }
             switch (opcao)
             {
                 case 1:
                     realParaIene.Converter(valorReal);
                     break;
                 case 2:
-                    realParaEuro.conversaoEuro(valorReal);
+                    realParaEuro.Converter(valorReal);
                     break;
                 case 3:
-                    realParaPesoArgentino.conversaoPesoArgentino(valorReal);
+                    realParaPesoArgentino.Converter(valorReal);
                     break;
                 case 4:
-                    ConversaroRealDolar.ConverteRealParaDolarCanadense(valorReal);
+                    realParaDolarCanadense.Converter(valorReal);
+                    break;
                 case 5:
-                    ConversaoRealRupia.Conver
+                    realParaRupia.Converter(valorReal);
+                    break;
                 default:
                     Console.WriteLine("Opcao invalida");
                     break;
