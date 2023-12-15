@@ -4,17 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\t\tCONVERSÃO DE MOEDAS");
-            Console.WriteLine("Grupo: Laura, Paula, Charles, Luana e Yuri\n");
+            Console.WriteLine($@"
+        CONVERSÃO DE MOEDA
+Grupo: Laura, Paula, Charles, Luana e Yuri
+(Aperte qualquer tecla para continuar)");
 
-            ConversaoRealEuro converterEuro = new ConversaoRealEuro();
-            double valorConvertido = converterEuro.ConversaoEuro();
-
-            ConversaoRealPeso converterPesoArgentino = new ConversaoRealPeso();
-            double valorConvertido = converterPesoArgentino.ConversaoPesoArgentino();          
-
-            ConversaoRealIene conversor = new ConversaoRealIene();
-            conversor.Converter();
+            Console.ReadKey();
+            Console.Clear();
+            InterfaceUsuario.MenuUsuario();
         }
     }
 }
