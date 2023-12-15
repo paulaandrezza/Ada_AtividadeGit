@@ -15,33 +15,29 @@ namespace Ada_AtividadeGit
             Console.WriteLine("1 - Real para Iene");
             Console.WriteLine("2 - Real para Euro");
             Console.WriteLine("3 - Real para Peso Argentino");
-            var realParaIene = new ConversaoRealIene();
             int opcao = int.Parse(Console.ReadLine());
-            var realParaEuro = new YuriClasse();
-            var realParaPesoArgentino = new LauraClasse();
-            var ConversaroRealDolar = new ConversaoRealDolar();
-
+            var realParaIene = new ConversaoRealIene();
+            var realParaEuro = new ConversaoRealEuro();
+            var realParaPesoArgentino = new ConversaoRealPeso();
+            var realParaDolar = new ConversaoRealDolar();
+            double valorReal;
+            Console.WriteLine("Informe o valor que deseja converter: ");
+            valorReal = double.Parse(Console.ReadLine());
             switch (opcao)
             {
                 case 1:
-                    Console.WriteLine("Informe o valor que deseja converter: ");
-                    double real_iene = double.Parse(Console.ReadLine());
-                    realParaIene.Converter(real_iene);
+                    realParaIene.Converter(valorReal);
                     break;
                 case 2:
-                    Console.WriteLine("Informe o valor que deseja converter: ");
-                    double real_euro = double.Parse(Console.ReadLine());
-                    realParaEuro.conversaoEuro(real_euro);
+                    realParaEuro.conversaoEuro(valorReal);
                     break;
                 case 3:
-                    Console.WriteLine("Informe o valor que deseja converter: ");
-                    double real_peso = double.Parse(Console.ReadLine());
-                    realParaPesoArgentino.conversaoPesoArgentino(real_peso);
+                    realParaPesoArgentino.conversaoPesoArgentino(valorReal);
                     break;
                 case 4:
-                    Console.WriteLine("Informe o valor que deseja converter: ");
-                    double real_dolar = double.Parse(Console.ReadLine());
-                    ConversaroRealDolar.ConverteRealParaDolarCanadense(real_dolar);
+                    ConversaroRealDolar.ConverteRealParaDolarCanadense(valorReal);
+                case 5:
+                    ConversaoRealRupia.Conver
                 default:
                     Console.WriteLine("Opcao invalida");
                     break;
