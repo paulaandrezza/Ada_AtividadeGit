@@ -12,17 +12,24 @@ namespace Ada_AtividadeGit
         public void Converter()
         {
             double valorEmReal;
-            Console.Write("Insira o valor em real que deseja converter para Iene: R$ ");
+            bool isValid = false;
 
-            if (double.TryParse(Console.ReadLine(), out valorEmReal))
+            while (!isValid)
             {
-                double valorEmIene = valorEmReal * taxaCambioRealParaIene;
-                Console.WriteLine($"Valor em Iene: ¥ {valorEmIene}");
+                Console.Write("Insira o valor em real que deseja converter para Iene: R$ ");
+
+                if (double.TryParse(Console.ReadLine(), out valorEmReal))
+                {
+                    double valorEmIene = valorEmReal * taxaCambioRealParaIene;
+                    Console.WriteLine($"Valor em Iene: ¥ {valorEmIene}");
+                    isValid = true;
+                }
+                else
+                {
+                    Console.WriteLine("Por favor, insira um valor válido.");
+                }
             }
-            else
-            {
-                Console.WriteLine("Por favor, insira um valor válido.");
-            }
+
         }
     }
 }
