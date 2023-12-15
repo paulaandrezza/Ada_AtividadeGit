@@ -10,20 +10,9 @@ namespace Ada_AtividadeGit
     public class ConversaoRealEuro
     {
         private double taxaConversaoParaEUR = 5.41;
-        public void ConversaoEuro()
-        {
-            double valorEmReal;
-            Console.Write("Insira o valor em real que deseja converter para Euro: R$ ");
-
-            if (double.TryParse(Console.ReadLine(), out valorEmReal))
-            {
-                double valorEmEUR = valorEmReal * taxaConversaoParaEUR;
-                Console.WriteLine($"Valor em Euro: € {valorEmEUR}");
-            }
-            else
-            {
-                Console.WriteLine("Por favor, insira um valor válido.");
-            }
+        public double Converter(double valorEmReal)
+        {     
+            return valorEmReal * taxaConversaoParaEUR;
         }
     }
 }
