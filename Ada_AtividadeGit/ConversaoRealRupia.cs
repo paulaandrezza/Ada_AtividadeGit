@@ -3,9 +3,9 @@
     internal class ConversaoRealRupia
     {
         private double taxaConversaoParaRupia = 16.86;
-        public double Conve(double valorEmReal)
+        public double Converter(double valorEmReal)
         {
-            return valorEmReal * taxaConversaoParaARS;
+            return valorEmReal * taxaConversaoParaRupia;
         }
 
     }
