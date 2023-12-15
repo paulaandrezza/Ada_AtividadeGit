@@ -19,10 +19,14 @@ namespace Ada_AtividadeGit
             int opcao = int.Parse(Console.ReadLine());
             var realParaEuro = new YuriClasse();
             var realParaPesoArgentino = new LauraClasse();
+            var ConversaroRealDolar = new ConversaoRealDolar();
+
             switch (opcao)
             {
                 case 1:
-                    realParaIene.Converter();
+                    Console.WriteLine("Informe o valor que deseja converter: ");
+                    double real_iene = double.Parse(Console.ReadLine());
+                    realParaIene.Converter(real_iene);
                     break;
                 case 2:
                     Console.WriteLine("Informe o valor que deseja converter: ");
@@ -34,6 +38,10 @@ namespace Ada_AtividadeGit
                     double real_peso = double.Parse(Console.ReadLine());
                     realParaPesoArgentino.conversaoPesoArgentino(real_peso);
                     break;
+                case 4:
+                    Console.WriteLine("Informe o valor que deseja converter: ");
+                    double real_dolar = double.Parse(Console.ReadLine());
+                    ConversaroRealDolar.ConverteRealParaDolarCanadense(real_dolar);
                 default:
                     Console.WriteLine("Opcao invalida");
                     break;
