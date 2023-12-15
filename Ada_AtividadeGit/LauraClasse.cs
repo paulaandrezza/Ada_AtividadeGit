@@ -10,7 +10,7 @@ namespace Ada_AtividadeGit
     public class LauraClasse
     {
         private double taxaConversaoParaARS = 162.04;
-        public void conversaoPesoArgentino()
+        public void ConversaoPesoArgentino()
         {
             double valorEmReal;
             Console.Write("Insira o valor em real que deseja converter para Peso Argentino: R$ ");

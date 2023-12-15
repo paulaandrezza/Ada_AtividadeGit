@@ -10,7 +10,7 @@ namespace Ada_AtividadeGit
     public class YuriClasse
     {
         private double taxaConversaoParaEUR = 5.41;
-        public void conversaoEuro()
+        public void ConversaoEuro()
         {
             double valorEmReal;
             Console.Write("Insira o valor em real que deseja converter para Euro: R$ ");
