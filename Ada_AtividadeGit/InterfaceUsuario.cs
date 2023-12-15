@@ -8,7 +8,7 @@ namespace Ada_AtividadeGit
 {
     public class InterfaceUsuario
     {
-        public static void MenuUsuario()
+        public void MenuUsuario()
         {
             Console.WriteLine("Bem vindo ao conversor de moedas!");
             Console.WriteLine("Selecione abaixo a opcao desejada: ");

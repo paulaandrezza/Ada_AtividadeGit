@@ -11,7 +11,8 @@ Grupo: Laura, Paula, Charles, Luana e Yuri
 
             Console.ReadKey();
             Console.Clear();
-            InterfaceUsuario.MenuUsuario();
+            var menu = new InterfaceUsuario();
+            menu.MenuUsuario();
         }
     }
 }
