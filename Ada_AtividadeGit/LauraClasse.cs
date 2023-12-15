@@ -9,10 +9,10 @@ namespace Ada_AtividadeGit
 {
     internal class LauraClasse
     {
-        double taxaConversaoARS = 162,04;
-        public static void conversaoPesoArgentino(double real)
+        double taxaConversaoARS = 162.04;
+        public double conversaoPesoArgentino(double real)
         {
-            decimal valorEmARS = real * tazaConversaoARS;
+            double valorEmARS = real * taxaConversaoARS;
             return valorEmARS;
         }
     }

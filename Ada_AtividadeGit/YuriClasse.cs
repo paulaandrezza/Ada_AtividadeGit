@@ -9,10 +9,10 @@ namespace Ada_AtividadeGit
 {
     internal class YuriClasse
     {
-        double taxaConversaoEUR = 5,41;
-        public static void conversaoEuro(double real)
+        double taxaConversaoEUR = 5.41;
+        public double conversaoEuro(double real)
         {
-            decimal valorEmEUR = real * tazaConversaoEUR;
+            double valorEmEUR = real * taxaConversaoEUR;
             return valorEmEUR;
         }
     }
