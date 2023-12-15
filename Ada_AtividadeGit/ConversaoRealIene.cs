@@ -1,21 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class ConversaoRealIene
+namespace Ada_AtividadeGit
 {
-    private double taxaCambioRealParaIene = 20.5;
-    public void Converter()
+    internal class ConversaoRealIene
     {
-        double valorEmReal;
-        Console.Write("Insira o valor em real que deseja converter para Iene: R$ ");
+        private double taxaCambioRealParaIene = 20.5;
+        public void Converter()
+        {
+            double valorEmReal;
+            Console.Write("Insira o valor em real que deseja converter para Iene: R$ ");
 
-        if (double.TryParse(Console.ReadLine(), out valorEmReal))
-        {
-            double valorEmIene = valorEmReal * taxaCambioRealParaIene;
-            Console.WriteLine($"Valor em Iene: ¥ {valorEmIene}");
-        }
-        else
-        {
-            Console.WriteLine("Por favor, insira um valor válido.");
+            if (double.TryParse(Console.ReadLine(), out valorEmReal))
+            {
+                double valorEmIene = valorEmReal * taxaCambioRealParaIene;
+                Console.WriteLine($"Valor em Iene: ¥ {valorEmIene}");
+            }
+            else
+            {
+                Console.WriteLine("Por favor, insira um valor válido.");
+            }
         }
     }
 }
