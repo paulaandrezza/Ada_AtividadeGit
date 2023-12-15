@@ -8,10 +8,10 @@
             Console.WriteLine("Grupo: Laura, Paula, Charles, Luana e Yuri\n");
 
             ConversaoRealEuro converterEuro = new ConversaoRealEuro();
-            converterEuro.ConversaoEuro();
+            double valorConvertido = converterEuro.ConversaoEuro();
 
             ConversaoRealPeso converterPesoArgentino = new ConversaoRealPeso();
-            converterPesoArgentino.ConversaoPesoArgentino();          
+            double valorConvertido = converterPesoArgentino.ConversaoPesoArgentino();          
 
             ConversaoRealIene conversor = new ConversaoRealIene();
             conversor.Converter();
