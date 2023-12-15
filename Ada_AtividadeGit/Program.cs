@@ -4,13 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Laurinha");
-            Console.WriteLine("Luana Daorinha");
-            Console.WriteLine("Yuri");
-            Console.WriteLine("Charles!");
-            Console.WriteLine("Paulinha!");
+            Console.WriteLine("\t\tCONVERSÃO DE MOEDAS");
+            Console.WriteLine("Grupo: Laura, Paula, Charles, Luana e Yuri\n");
 
+            YuriClasse.conversaoEuro();
+            LauraClasse.conversaoPesoArgentino();          
             ConversaoRealIene conversor = new ConversaoRealIene();
             conversor.Converter();
 
