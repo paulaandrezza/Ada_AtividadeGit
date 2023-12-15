@@ -4,16 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Laurinha");
-            Console.WriteLine("Luana Daorinha");
-            Console.WriteLine("Yuri");
-            Console.WriteLine("Charles!");
-            Console.WriteLine("Paulinha!");
+            Console.WriteLine("\t\tCONVERSÃO DE MOEDAS");
+            Console.WriteLine("Grupo: Laura, Paula, Charles, Luana e Yuri\n");
 
-            double real = 1;
-            double euro = YuriClasse.conversaoEuro(real);
-            double pesoArgentino = LauraClasse.conversaoPesoArgentino(real);
+            YuriClasse.conversaoEuro();
+            LauraClasse.conversaoPesoArgentino();          
         }
     }
 }

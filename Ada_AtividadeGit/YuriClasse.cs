@@ -7,13 +7,23 @@ using System.Threading.Tasks;
 
 namespace Ada_AtividadeGit
 {
-    internal class YuriClasse
+    public class YuriClasse
     {
-        double taxaConversaoEUR = 5,41;
-        public static void conversaoEuro(double real)
+        private double taxaConversaoParaEUR = 5.41;
+        public void conversaoEuro()
         {
-            decimal valorEmEUR = real * tazaConversaoEUR;
-            return valorEmEUR;
+            double valorEmReal;
+            Console.Write("Insira o valor em real que deseja converter para Euro: R$ ");
+
+            if (double.TryParse(Console.ReadLine(), out valorEmReal))
+            {
+                double valorEmEUR = valorEmReal * taxaConversaoParaEUR;
+                Console.WriteLine($"Valor em Euro: € {valorEmEUR}");
+            }
+            else
+            {
+                Console.WriteLine("Por favor, insira um valor válido.");
+            }
         }
     }
 }
