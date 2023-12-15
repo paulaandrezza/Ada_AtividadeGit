@@ -6,6 +6,8 @@
         {
             Console.WriteLine("Hello, World!");
             Concole.WriteLine("Laurinha");
+            Console.WriteLine("Luana Daorinha");
+            Console.WriteLine("Yuri");
         }
     }
 }
