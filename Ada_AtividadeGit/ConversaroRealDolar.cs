@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ada_AtividadeGit
 {
-    internal class CharlesClasse
+    internal class ConversaroRealDolar
     {
         public static void ConverteRealParaDolarCanadense()
         {

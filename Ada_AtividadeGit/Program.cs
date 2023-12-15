@@ -20,7 +20,7 @@
             double euro = YuriClasse.conversaoEuro(real);
             double pesoArgentino = LauraClasse.conversaoPesoArgentino(real);
 
-            CharlesClasse.ConverteRealParaDolarCanadense();
+            ConversaroRealDolar.ConverteRealParaDolarCanadense();
         }
     }
 }
