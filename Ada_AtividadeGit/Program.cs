@@ -15,8 +15,6 @@
 
             ConversaoRealIene conversor = new ConversaoRealIene();
             conversor.Converter();
-
-            ConversaroRealDolar.ConverteRealParaDolarCanadense();
         }
     }
 }
