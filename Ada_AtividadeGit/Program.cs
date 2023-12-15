@@ -9,7 +9,8 @@
             Console.WriteLine("Luana Daorinha");
             Console.WriteLine("Yuri");
             YuriClasse.YuriMetodo();
-            Console.WriteLine("Hello, Charlesss!");
+            Console.WriteLine("Charlesss!");
+            Console.WriteLine("Paulinha!");
         }
     }
 }
