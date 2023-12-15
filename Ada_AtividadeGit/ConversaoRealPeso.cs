@@ -10,19 +10,24 @@ namespace Ada_AtividadeGit
     public class ConversaoRealPeso
     {
         private double taxaConversaoParaARS = 162.04;
+        private bool valido = true;
         public void ConversaoPesoArgentino()
         {
-            double valorEmReal;
-            Console.Write("Insira o valor em real que deseja converter para Peso Argentino: R$ ");
+            while (valido)
+            {
+                double valorEmReal;
+                Console.Write("Insira o valor em real que deseja converter para Peso Argentino: R$ ");
 
-            if (double.TryParse(Console.ReadLine(), out valorEmReal))
-            {
-                double valorEmARS = valorEmReal * taxaConversaoParaARS;
-                Console.WriteLine($"Valor em Peso Argentino: $ {valorEmARS}");
-            }
-            else
-            {
-                Console.WriteLine("Por favor, insira um valor válido.");
+                if (double.TryParse(Console.ReadLine(), out valorEmReal))
+                {
+                    double valorEmARS = valorEmReal * taxaConversaoParaARS;
+                    Console.WriteLine($"Valor em Peso Argentino: $ {valorEmARS}");
+                    valido = false;
+                }
+                else
+                {
+                    Console.WriteLine("Por favor, insira um valor válido.");
+                }
             }
         }
     }
