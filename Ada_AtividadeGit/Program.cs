@@ -5,6 +5,10 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
+            Console.WriteLine("Laurinha");
+            Console.WriteLine("Luana Daorinha");
+            Console.WriteLine("Yuri");
+            YuriClasse.YuriMetodo();
             Console.WriteLine("Hello, Charlesss!");
         }
     }
