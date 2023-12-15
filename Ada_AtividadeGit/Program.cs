@@ -15,6 +15,12 @@
 
             ConversaoRealIene conversor = new ConversaoRealIene();
             conversor.Converter();
+
+            double real = 1;
+            double euro = YuriClasse.conversaoEuro(real);
+            double pesoArgentino = LauraClasse.conversaoPesoArgentino(real);
+
+            CharlesClasse.ConverteRealParaDolarCanadense();
         }
     }
 }
