@@ -8,21 +8,10 @@ namespace Ada_AtividadeGit
 {
     internal class ConveraoRealRupia
     {
-        private decimal taxaConversaoParaINR = 0.059m;
-        public void conversaoEuro()
+        private double taxaConversaoParaINR = 16.84;
+        public double Converter(double valorEmReal)
         {
-            decimal valorEmReal;
-            Console.Write("Insira o valor em real que deseja converter para Rupias: R$ ");
-
-            if (decimal.TryParse(Console.ReadLine(), out valorEmReal))
-            {
-                decimal valorEmINR = valorEmReal * taxaConversaoParaINR;
-                Console.WriteLine($"Valor em Rupias: ₹ {valorEmINR}");
-            }
-            else
-            {
-                Console.WriteLine("Por favor, insira um valor válido.");
-            }
+            return valorEmReal * taxaConversaoParaINR;
         }
     }
 }
