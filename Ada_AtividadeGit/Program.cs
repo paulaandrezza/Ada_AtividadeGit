@@ -4,9 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Luana Daorinha");
-            Console.WriteLine("Yuri");
+            Console.WriteLine("\t\tCONVERSÃO DE MOEDAS");
+            Console.WriteLine("Grupo: Laura, Paula, Charles, Luana e Yuri\n");
+
+            YuriClasse.conversaoEuro();
+            LauraClasse.conversaoPesoArgentino();          
+            ConversaoRealIene conversor = new ConversaoRealIene();
+            conversor.Converter();
+
+            double real = 1;
+            double euro = YuriClasse.conversaoEuro(real);
+            double pesoArgentino = LauraClasse.conversaoPesoArgentino(real);
         }
     }
 }
