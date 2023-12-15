@@ -11,6 +11,9 @@
             YuriClasse.YuriMetodo();
             Console.WriteLine("Charlesss!");
             Console.WriteLine("Paulinha!");
+
+            ConversaoRealIene conversor = new ConversaoRealIene();
+            conversor.Converter();
         }
     }
 }
