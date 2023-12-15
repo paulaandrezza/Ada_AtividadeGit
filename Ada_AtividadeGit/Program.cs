@@ -8,7 +8,12 @@
             Console.WriteLine("Laurinha");
             Console.WriteLine("Luana Daorinha");
             Console.WriteLine("Yuri");
-            YuriClasse.YuriMetodo();
+            Console.WriteLine("Charles!");
+            Console.WriteLine("Paulinha!");
+
+            double real = 1;
+            double euro = YuriClasse.conversaoEuro(real);
+            double pesoArgentino = LauraClasse.conversaoPesoArgentino(real);
         }
     }
 }

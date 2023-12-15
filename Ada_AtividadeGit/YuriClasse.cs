@@ -9,9 +9,11 @@ namespace Ada_AtividadeGit
 {
     internal class YuriClasse
     {
-        public static void YuriMetodo()
+        double taxaConversaoEUR = 5,41;
+        public static void conversaoEuro(double real)
         {
-            Console.WriteLine("Yuri");
+            decimal valorEmEUR = real * tazaConversaoEUR;
+            return valorEmEUR;
         }
     }
 }
