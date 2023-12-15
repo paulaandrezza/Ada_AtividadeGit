@@ -13,7 +13,7 @@ namespace Ada_AtividadeGit
         /// </summary>
         /// <param name="valorReal"></param>
         /// <returns></returns>
-        public static double ConverteRealParaDolarCanadense(double valorReal)
+        public double ConverteRealParaDolarCanadense(double valorReal)
         {
             double taxaConversao = 3.69;
             double valorDolarCanadense = valorReal / taxaConversao;
