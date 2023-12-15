@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Ada_AtividadeGit
 {
-    public class YuriClasse
+    public class ConversaoRealEuro
     {
         private double taxaConversaoParaEUR = 5.41;
-        public void conversaoEuro()
+        public void ConversaoEuro()
         {
             double valorEmReal;
             Console.Write("Insira o valor em real que deseja converter para Euro: R$ ");

@@ -7,14 +7,20 @@
             Console.WriteLine("\t\tCONVERSÃO DE MOEDAS");
             Console.WriteLine("Grupo: Laura, Paula, Charles, Luana e Yuri\n");
 
-            YuriClasse.conversaoEuro();
-            LauraClasse.conversaoPesoArgentino();          
+            ConversaoRealEuro converterEuro = new ConversaoRealEuro();
+            converterEuro.ConversaoEuro();
+
+            ConversaoRealPeso converterPesoArgentino = new ConversaoRealPeso();
+            converterPesoArgentino.ConversaoPesoArgentino();          
+
             ConversaoRealIene conversor = new ConversaoRealIene();
             conversor.Converter();
 
             double real = 1;
             double euro = YuriClasse.conversaoEuro(real);
             double pesoArgentino = LauraClasse.conversaoPesoArgentino(real);
+
+            ConversaroRealDolar.ConverteRealParaDolarCanadense();
         }
     }
 }
