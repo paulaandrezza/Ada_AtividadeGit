@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace Ada_AtividadeGit
 {
-    public class LauraClasse
+    public class ConversaoRealEuro
     {
-        private double taxaConversaoParaARS = 162.04;
-        public void ConversaoPesoArgentino()
+        private double taxaConversaoParaEUR = 5.41;
+        public void ConversaoEuro()
         {
             double valorEmReal;
-            Console.Write("Insira o valor em real que deseja converter para Peso Argentino: R$ ");
+            Console.Write("Insira o valor em real que deseja converter para Euro: R$ ");
 
             if (double.TryParse(Console.ReadLine(), out valorEmReal))
             {
-                double valorEmARS = valorEmReal * taxaConversaoParaARS;
-                Console.WriteLine($"Valor em Peso Argentino: $ {valorEmARS}");
+                double valorEmEUR = valorEmReal * taxaConversaoParaEUR;
+                Console.WriteLine($"Valor em Euro: € {valorEmEUR}");
             }
             else
             {

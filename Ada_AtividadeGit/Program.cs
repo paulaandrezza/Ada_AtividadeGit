@@ -7,10 +7,10 @@
             Console.WriteLine("\t\tCONVERSÃO DE MOEDAS");
             Console.WriteLine("Grupo: Laura, Paula, Charles, Luana e Yuri\n");
 
-            YuriClasse converterEuro = new YuriClasse();
+            ConversaoRealEuro converterEuro = new ConversaoRealEuro();
             converterEuro.ConversaoEuro();
 
-            LauraClasse converterPesoArgentino = new LauraClasse();
+            ConversaoRealPeso converterPesoArgentino = new ConversaoRealPeso();
             converterPesoArgentino.ConversaoPesoArgentino();          
 
             ConversaoRealIene conversor = new ConversaoRealIene();
