@@ -10,7 +10,7 @@ namespace Ada_AtividadeGit
     public class ConversaoRealEuro
     {
         private double taxaConversaoParaEUR = 5.41;
-        public double ConversaoEuro(double valorEmReal)
+        public double Converter(double valorEmReal)
         {     
             return valorEmReal * taxaConversaoParaEUR;
         }
